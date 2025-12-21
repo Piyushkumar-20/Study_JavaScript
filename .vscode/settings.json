@@ -1,3 +1,18 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.inlineSuggest.enabled": false,
+    "editor.parameterHints.enabled": false,
+    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestionsMode": "off",
+    "javascript.suggest.enabled": false,
+    "typescript.suggest.enabled": false,
+    "github.copilot.enable": {
+        "*": false
+    }
 }
