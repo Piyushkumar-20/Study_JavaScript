@@ -1,0 +1,43 @@
+<!--Problem 1 DOM Selection -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Day 5</title>
+</head>
+<body>
+
+  <h1 id="title">Hello DOM</h1>
+
+  <p class="text">Paragraph 1</p>
+  <p class="text">Paragraph 2</p>
+
+  <ul id="list">
+    <li>Java</li>
+    <li>Piyush</li>
+    <li>hello</li>
+  </ul>
+
+  <script>
+
+document.getElementByID('title')
+document.getElementByClassname('text')
+document.getElementByquerySelectorAll('text')
+
+function addelement(langname){
+    const li = document.createElement('li')
+    li.appendChild = document.createTextnode(langname)
+    document.querySelector('.language'). appendChild(li)
+    }
+    addelement("Ruby")
+    addelement("Tailwind")
+     
+
+
+const remove = document.querySelector("li:nth-child(2)")
+remove.remove()
+  </script>
+
+
+</body>
+</html>
