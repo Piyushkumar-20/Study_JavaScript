@@ -1,0 +1,38 @@
+/* .heading {
+    color: blue;
+    background-color: yellow;
+    padding: 15px;
+}button{
+    color: grey;
+    background-color: black;
+    padding: 10px;
+}
+h4{
+    color: red;
+    padding: 12px;
+}
+body{
+    background-color: pink;
+} */
+
+/* #box{
+    width: 100px;
+    height: 50px;
+    border: 12px solid black;
+    margin: 20px;
+    background-color: lightgrey;
+} */
+
+.para {
+    font-size: 18px;
+    color: green;
+    background-color: lightyellow;
+    padding: 20px;
+}
+
+.newclass{
+    font-size: 16px;
+    color: purple;
+    background-color: lightblue;
+    padding: 10px;
+}

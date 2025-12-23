@@ -1,19 +1,22 @@
 {
     "git.ignoreLimitWarning": true,
     "editor.quickSuggestions": {
-        "other": false,
+        "other": "inline",
         "comments": false,
-        "strings": false
+        "strings": true
     },
-    "editor.suggestOnTriggerCharacters": false,
-    "editor.inlineSuggest.enabled": false,
-    "editor.parameterHints.enabled": false,
-    "editor.wordBasedSuggestions": "off",
-    "editor.wordBasedSuggestionsMode": "off",
-    "javascript.suggest.enabled": false,
-    "typescript.suggest.enabled": false,
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.parameterHints.enabled": true,
+    "editor.wordBasedSuggestions": "matchingDocuments",
+    "editor.wordBasedSuggestionsMode": "matchingDocuments",
+    "javascript.suggest.enabled": true,
+    "typescript.suggest.enabled": true,
     "github.copilot.enable": {
-        "*": false
+        "*": true
     },
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.tabCompletion": "on",
     "liveServer.settings.port": 5502
 }

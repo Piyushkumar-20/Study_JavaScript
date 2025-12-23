@@ -19,23 +19,10 @@
   </ul>
 
   <script>
-
-document.getElementByID('title')
-document.getElementByClassname('text')
-document.getElementByquerySelectorAll('text')
-
-function addelement(langname){
-    const li = document.createElement('li')
-    li.appendChild = document.createTextnode(langname)
-    document.querySelector('.language'). appendChild(li)
-    }
-    addelement("Ruby")
-    addelement("Tailwind")
-     
-
-
-const remove = document.querySelector("li:nth-child(2)")
-remove.remove()
+    const ul = document.getElementById("list")
+    const li = document.createElement("li")
+    li.textContent= "Python"
+    ul.appendChild(li);
   </script>
 
 
