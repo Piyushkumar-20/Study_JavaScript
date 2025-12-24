@@ -1,0 +1,14 @@
+.button{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#grey { background: grey; }
+#green { background: green; }
+#black { background: black; }
+#blue { background: blue; }
+#white { background: white; border: 1px solid black; }
