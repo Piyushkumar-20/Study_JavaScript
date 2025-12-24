@@ -1,0 +1,14 @@
+#clock {
+
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    margin-top: 20px;
+
+}
+
+#banner {
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    color: #555;
+}
