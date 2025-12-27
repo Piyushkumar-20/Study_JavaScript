@@ -5,23 +5,21 @@ const promise1 = new Promise(function (resolve, reject){
     // Do And Async Task
     // DB calls, cryptography, network
     setTimeout(function (){
-        //console.log("Async task is complete")
+console.log("Async task is complete")
         resolve() // By using resolve() it is connected to then function
     }, 2000)
 })
 
 // Consuming Promising
-promise1.then(function(){
-    //console.log("Promise Consumed")
+promise1.then(function(){console.log("Promise Consumed")
 })
 
 const promise = new Promise(function (resolve, reject){
     setTimeout(function (){
-        //console.log("ASYNC task 2")
+console.log("ASYNC task 2")
         resolve() // By using resolve it get connected to then function
     },2000)
-}).then(function(){
-    //console.log("ASYNC2 Resolved")
+}).then(function(){console.log("ASYNC2 Resolved")
 })
 
 //    PROMISES WITH DATA PASSED DATA CONSUMPTION
@@ -31,7 +29,7 @@ const promise3 = new Promise(function (resolve, reject){
     }, 2000)
 })
 promise3.then(function (user){
-    //console.log(user)
+    console.log(user)
 })
 
 
@@ -59,16 +57,16 @@ the promise is settled(mean its is fullfilled or rjected). */
 
 promise4
 .then((user) => {  
-    //console.log(user)
+    console.log(user)
     return user.Password
 })
 .then((Password) => {
-    //console.log(Password)
+    console.log(Password)
 })
 .catch((error) => {
-    //console.log(error)
+    console.log(error)
 })
-//.finally(() =//console.log("The promise is resolve either its rejected"))
+//.finally(() = console.log("The promise is resolve either its rejected"))
 
 
 // PROMISE USING ASYNC AWAIT
@@ -87,9 +85,9 @@ const promise5 = new Promise(function(resolve, reject){
 async function consumepromise(){
     try{
         const response = await promise5
-        console.log(response)
+console.log(response)
     } catch (error) {
-        console.log(error)
+console.log(error)
     }
 }
 
@@ -100,9 +98,9 @@ consumepromise()
 //     const response = await fetch ('https://api.github.com/users/hiteshchoudhary')
     
 //     const data = await response.json()
-//     console.log(data)
+//   console.log(data)
 //     } catch (error){
-//         console.log("E:", error)
+//       console.log("E:", error)
 //     }
 // }
 // getAlluser()
@@ -111,5 +109,18 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response) => {
     return response.json
 })
-.then((data) => console.log(data))
-.catch ((error) => console.log(error))
+.then((data) =console.log(data))
+.catch ((error) =console.log(error))
+
+// .then() always returns a Promise to normalize synchronous and asynchronous results into a single composable flow.
+/*Imagine if .then() behaved like a normal function:
+
+.then(() => 10)
+.then((x) => x * 2)
+
+
+If the first .then() returned:
+
+a value sometimes
+
+a Promise sometimes */
