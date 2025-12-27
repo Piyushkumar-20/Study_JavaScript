@@ -17,7 +17,7 @@
         "plaintext": false,
         "markdown": false,
         "scminput": false,
-        "html": false
+        "html": true
     },
     "editor.acceptSuggestionOnEnter": "off",
     "editor.acceptSuggestionOnCommitCharacter": false,
