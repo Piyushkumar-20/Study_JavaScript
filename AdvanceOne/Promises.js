@@ -68,8 +68,10 @@ promise4
 .catch((error) => {
     //console.log(error)
 })
-//.finally(() => console.log("The promise is resolve either its rejected"))
+//.finally(() =//console.log("The promise is resolve either its rejected"))
 
+
+// PROMISE USING ASYNC AWAIT
 const promise5 = new Promise(function(resolve, reject){
     setTimeout( () => {
         let error = true
@@ -80,7 +82,34 @@ const promise5 = new Promise(function(resolve, reject){
         }
     },1000)
 })
-async function consumepromise5(){
-    const response = await promise5
-    console.log(response)
+
+// USNG FETCH
+async function consumepromise(){
+    try{
+        const response = await promise5
+        console.log(response)
+    } catch (error) {
+        console.log(error)
+    }
 }
+
+consumepromise()
+
+// async function getAlluser(){
+//     try{
+//     const response = await fetch ('https://api.github.com/users/hiteshchoudhary')
+    
+//     const data = await response.json()
+//     console.log(data)
+//     } catch (error){
+//         console.log("E:", error)
+//     }
+// }
+// getAlluser()
+
+fetch('https://api.github.com/users/hiteshchoudhary')
+.then((response) => {
+    return response.json
+})
+.then((data) => console.log(data))
+.catch ((error) => console.log(error))
