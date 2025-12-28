@@ -117,10 +117,6 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 
 .then(() => 10)
 .then((x) => x * 2)
-
-
 If the first .then() returned:
-
 a value sometimes
-
 a Promise sometimes */
