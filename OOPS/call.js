@@ -12,3 +12,8 @@ function createuser(username, email, password){
 
 const chai = new createuser("chai", "chai@fb.com", 123)
 console.log(chai)
+
+function A () {}
+const a = new A
+
+console.log(a.__proto__ === A.prototype)
